@@ -26,12 +26,15 @@
 #include <sys/wait.h>
 #include <stdlib.h>
 #include <stdint.h>
-
+/* 判断是否是空格 */
 #define ISspace(x) isspace((int)(x))
 
 #define SERVER_STRING "Server: jdbhttpd/0.1.0\r\n"
+//标准输入
 #define STDIN   0
+//标准输出
 #define STDOUT  1
+//标准错误
 #define STDERR  2
 
 void accept_request(void *);
